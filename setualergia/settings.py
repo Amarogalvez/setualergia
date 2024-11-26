@@ -15,7 +15,8 @@ import firebase_admin
 from firebase_admin import credentials
 
 
-
+cred = credentials.Certificate("C:\\Users\\Amaro\\setualergia\\firebase\\setualergia-e7336-firebase-adminsdk-1pe6d-e3bf9d850a.json")
+firebase_admin.initialize_app(cred)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
